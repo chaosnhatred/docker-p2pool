@@ -54,7 +54,7 @@ RUN cd $HOME/p2pool && \
 	ln -s P2PoolExtendedFrontEnd web-static			
 
 # clean up
-RUN	apt-get remove --purge -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libdb4.8-dev libdb4.8++-dev && \
+RUN	apt-get remove --purge -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libdb4.8-dev libdb4.8++-dev && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*	
 
